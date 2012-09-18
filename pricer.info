@@ -1,0 +1,4 @@
+name = Pricer
+description = Create and manage pricing wizards for various products (e.g., t-shirts, hats, etc.)
+core = 6.x
+version = 1.0

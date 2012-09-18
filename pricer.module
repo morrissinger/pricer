@@ -1,0 +1,99 @@
+<?php
+/**
+ * @file Create pricing wizards for various products, e.g. hats, t-shirts, etc.
+ * 
+ * This module allows a user to create wizards for pricing various products, such
+ * as hats, t-shirts, tote-bags, and more, based on a few simple principles. Each
+ * product has differing per-unit pricing based on quanitity breaks that the user
+ * can define. Furthermore, each product is amenable to customization, which itself
+ * can be broken into varying per-customization breaks.
+ * 
+ * So, for example, one could define a pricing wizard for baseball hats, in which
+ * the price per unit of a hat is less, the more the customer orders. Those hats
+ * might be customizeable by way of embroidery, which can be priced at various levels
+ * depending on the number of stitches required.
+ * 
+ * The person creating a new pricing wizard can specify what node type to include in
+ * the pricing wizard.
+ */
+ 
+// \defgroup drupal_hooks Drupal Hooks
+// @{
+	
+ /**
+  * Implementation of hook_menu().
+  * 
+  * Creates a global configuration page for the pricing wizard, which allows the user
+  * to create new pricing wizards. Also creates a menu item for editing a particular
+  * pricing wizard. Implements a menu item for each pricer for which the user would
+  * like to create a menu item. Also creates a menu item corresponding to a javascript
+  * file and a menu item corresponding to a table partial which can be rendered and
+  * returned when a pricing form is submitted via AJAX.
+  */
+function pricer_menu($may_cache) {
+	
+}
+
+/**
+ * Implementation of hook_perm().
+ * 
+ * Creates a permissioning scheme that allows the site administrator to select
+ * what roles can see pricers, and what roles can create them.
+ */
+function pricer_perm() {
+	
+}
+// @}
+
+// \defgroup forms Form Generators
+// @{
+
+/**
+ * Generates a form to create a new pricer or edit an existing pricer.
+ */
+function pricer_edit_form() {
+	
+}
+
+/**
+ * Generates a form for use in a pricer wizard.
+ */
+function pricer_wizard_form() {
+	
+}
+// @}
+
+// \defgroup theme Themers
+// @{
+
+/**
+ * Theme a pricer wizard
+ */	
+
+/**
+ * Theme a pricer wizard results table
+ */
+
+// @}
+	
+// \defgroup menu_callbacks Menu Callbacks
+// @{
+	
+/**
+ * Render a pricer wizard.
+ */
+ 
+/**
+ * Render a pricer wizard results page.
+ */
+ 
+/**
+ * Return a pricer wizard results table over AJAX.
+ */
+
+// @}
+
+// \defgroup helpers Helper Functions
+// @{
+	
+// @}
